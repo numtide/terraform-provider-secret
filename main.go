@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/plugin"
-	"github.com/tweag/terraform-provider-secret/secret"
+	"github.com/numtide/terraform-provider-secret/secret"
 )
 
 func main() {

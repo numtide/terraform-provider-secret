@@ -1,4 +1,4 @@
-module github.com/tweag/terraform-provider-secret
+module github.com/numtide/terraform-provider-secret
 
 go 1.15
 

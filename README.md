@@ -29,7 +29,7 @@ Hashicorp Vault in the longer term.
 2. Use `go get` to pull down this repository and compile the binary:
 
 ```
-go get -u -v github.com/tweag/terraform-provider-secret
+go get -u -v github.com/numtide/terraform-provider-secret
 ```
 
 The binary will be placed in `$GOPATH/bin` or `$HOME/go/bin` if `$GOPATH` is not set.
@@ -48,7 +48,7 @@ nix-env -iA nixpkgs.terraform-full
 Clone the repository:
 
 ```sh
-$ git clone git@github.com:tweag/terraform-provider-secret
+$ git clone git@github.com:numtide/terraform-provider-secret
 ```
 
 Enter the provider directory and build the provider
@@ -131,9 +131,14 @@ resource "other_resource" "xxx" {
 
 ## Developing the Provider
 
-If you wish to work on the provider, you'll first need [Go](http://www.golang.org) installed on your machine (version 1.8+ is *required*). You'll also need to correctly setup a [GOPATH](http://golang.org/doc/code.html#GOPATH), as well as adding `$GOPATH/bin` to your `$PATH`.
+If you wish to work on the provider, you'll first need
+[Go](http://www.golang.org) installed on your machine (version 1.8+ is
+*required*). You'll also need to correctly setup a
+[GOPATH](http://golang.org/doc/code.html#GOPATH), as well as adding
+`$GOPATH/bin` to your `$PATH`.
 
-To compile the provider, run `make build`. This will build the provider and put the provider binary in the `$GOPATH/bin` directory.
+To compile the provider, run `make build`. This will build the provider and
+put the provider binary in the `$GOPATH/bin` directory.
 
 ```sh
 $ make bin
@@ -173,7 +178,7 @@ This work has been sponsored by [Digital Asset](https://digitalasset.com) and [T
 [![Digital Asset](https://avatars1.githubusercontent.com/u/9829909?s=200&v=4)](http://digitalasset.com)
 [![Tweag I/O](https://avatars1.githubusercontent.com/u/6057932?s=200&v=4)](https://tweag.io)
 
-This repository is maintained by [Tweag I/O](http://tweag.io)
+This repository is maintained by [Numtide](http://numtide.com)
 
 Have questions? Need help? Tweet at
-[@tweagio](http://twitter.com/tweagio).
+[@numtide](http://twitter.com/numtide).
