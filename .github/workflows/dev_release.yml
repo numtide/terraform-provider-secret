@@ -38,15 +38,15 @@ jobs:
         env:
           GPG_FINGERPRINT: ${{ steps.import_gpg.outputs.fingerprint }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
             name: darwin-amd64
             path: dist/*_darwin_amd64.zip
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
             name: linux-amd64
             path: dist/*_linux_amd64.zip
-      # - uses: actions/upload-artifact@v2
+      # - uses: actions/upload-artifact@v3
       #   with:
       #       name: windows-amd64
       #       path: dist/*_windows_amd64.zip
